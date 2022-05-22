@@ -65,7 +65,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     K0D,K15,K1D,K24,K2D,K2C,K35,K3C,K43,K44,K4D,K54,K5B,    K5D, KF1,KE9,KFA,  K6C,K75,K7D,K79, \
     K58,K1C,K1B,K23,K2B,K34,K33,K3B,K42,K4B,K4C,K52,        K5A,               K6B,K73,K74,K6D, \
     K12,K61,K1A,K22,K21,K2A,K32,K31,K3A,K41,K49,K4A,    K51,K59,     KF5,      K69,K72,K7A,KDA, \
-    K14,K9F,K11,K67,    K29,            K64,K13,K91,KA7,KAF,K94, KEB,KF2,KF4,  K68,K70,K71,K63, \
+    K14,K9F,K11,K67,        K29,        K64,K13,K91,KA7,KAF,K94, KEB,KF2,KF4,  K68,K70,K71,K63, \
                                                                                                 \
     KB7, KBF, KDE,           /* System Power, Sleep, Wake */                                    \
     KCD, K95, KBB, KB4, KD0, /* Next, Previous, Stop, Pause, Media Select */                    \
@@ -129,7 +129,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     K0D,K15,K1D,K24,K2D,K2C,K35,K3C,K43,K44,K4D,K54,K5B,K5D, KF1,KE9,KFA,  K6C,K75,K7D,     \
     K58,K1C,K1B,K23,K2B,K34,K33,K3B,K42,K4B,K4C,K52,    K5A,               K6B,K73,K74,K79, \
     K12,K1A,K22,K21,K2A,K32,K31,K3A,K41,K49,K4A,        K59,     KF5,      K69,K72,K7A,     \
-    K14,K9F,K11,        K29,                K91,KA7,KAF,K94, KEB,KF2,KF4,  K70,    K71,KDA  \
+    K14,K9F,K11,            K29,            K91,KA7,KAF,K94, KEB,KF2,KF4,  K70,    K71,KDA  \
 ) { \
     { XXXXXXX, K01,     XXXXXXX, K03,     K04,     K05,     K06,     K07     }, \
     { KC_F13,  K09,     K0A,     K0B,     K0C,     K0D,     K0E,     XXXXXXX }, \
@@ -187,7 +187,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     K0D,K15,K1D,K24,K2D,K2C,K35,K3C,K43,K44,K4D,K54,K5B,K5A, KF1,KE9,KFA,  K6C,K75,K7D,     \
     K58,K1C,K1B,K23,K2B,K34,K33,K3B,K42,K4B,K4C,K52,K5D,                   K6B,K73,K74,K79, \
     K12,K61,K1A,K22,K21,K2A,K32,K31,K3A,K41,K49,K4A,    K59,     KF5,      K69,K72,K7A,     \
-    K14,K9F,K11,        K29,                K91,KA7,KAF,K94, KEB,KF2,KF4,  K70,    K71,KDA  \
+    K14,K9F,K11,            K29,            K91,KA7,KAF,K94, KEB,KF2,KF4,  K70,    K71,KDA  \
 ) { \
     { XXXXXXX, K01,     XXXXXXX, K03,     K04,     K05,     K06,     K07     }, \
     { KC_F13,  K09,     K0A,     K0B,     K0C,     K0D,     K0E,     XXXXXXX }, \
@@ -223,6 +223,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     { XXXXXXX, XXXXXXX, KFA,     XXXXXXX, KFC,     KFD,     KFE,     XXXXXXX }, \
 }
 
+/* ,---.   ,---------------. ,---------------. ,---------------. ,-----------.
+ * |Esc|   |F1 |F2 |F3 |F4 | |F5 |F6 |F7 |F8 | |F9 |F10|F11|F12| |PrS|ScL|Pau|
+ * `---'   `---------------' `---------------' `---------------' `-----------'
+ * ,-----------------------------------------------------------. ,-----------. ,---------------.
+ * |  `|  1|  2|  3|  4|  5|  6|  7|  8|  9|  0|  -|  ^|JPY|Bsp| |Ins|Hom|PgU| |NmL|  /|  *|  -|
+ * |-----------------------------------------------------------| |-----------| |---------------|
+ * |Tab  |  Q|  W|  E|  R|  T|  Y|  U|  I|  O|  P|  @|  [| Retn| |Del|End|PgD| |  7|  8|  9|  +|
+ * |------------------------------------------------------`    | `-----------' |-----------|   |
+ * |CapsL |  A|  S|  D|  F|  G|  H|  J|  K|  L|  ;|  :|  ]|    |               |  4|  5|  6|   |
+ * |-----------------------------------------------------------|     ,---.     |---------------|
+ * |Shft    |  Z|  X|  C|  V|  B|  N|  M|  ,|  ,|  /| RO|Shift |     |Up |     |  1|  2|  3|Ent|
+ * |-----------------------------------------------------------| ,-----------. |-----------|   |
+ * |Ctl|Gui|Alt|MHEN|      Space      |HENK|KNA|Alt|Gui|App|Ctl| |Lef|Dow|Rig| |      0|  .|   |
+ * `-----------------------------------------------------------' `-----------' `---------------'
+ */
 /* JIS layout */
 #define LAYOUT_jis( \
     K76,K05,K06,K04,K0C,K03,K0B,K83,K0A,K01,K09,K78,K07,         KFC,K7E,KFE,                   \
@@ -230,7 +245,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     K0D,K15,K1D,K24,K2D,K2C,K35,K3C,K43,K44,K4D,K54,K5B,    K5A, KF1,KE9,KFA,  K6C,K75,K7D,     \
     K58,K1C,K1B,K23,K2B,K34,K33,K3B,K42,K4B,K4C,K52,K5D,                       K6B,K73,K74,K79, \
     K12,K1A,K22,K21,K2A,K32,K31,K3A,K41,K49,K4A,K51,        K59,     KF5,      K69,K72,K7A,     \
-    K14,K9F,K11,    K67,K29,K64,K13,            K91,KA7,KAF,K94, KEB,KF2,KF4,  K70,    K71,KDA  \
+    K14,K9F,K11,K67,        K29,        K64,K13,K91,KA7,KAF,K94, KEB,KF2,KF4,  K70,    K71,KDA  \
 ) { \
     { XXXXXXX, K01,     XXXXXXX, K03,     K04,     K05,     K06,     K07     }, \
     { KC_F13,  K09,     K0A,     K0B,     K0C,     K0D,     K0E,     XXXXXXX }, \
